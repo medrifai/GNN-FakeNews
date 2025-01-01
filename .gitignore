@@ -1,0 +1,14 @@
+
+*.xml
+*.iml
+.idea/dictionaries
+data/gossipcop/raw/A.txt
+*.npy
+*.npz
+*.pt
+utils/__pycache__
+data/politifact/raw/A.txt
+*.zip
+data/data/gossipcop/raw/A.txt
+data/data/politifact/raw/A.txt
+data/data/README.md
