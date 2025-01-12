@@ -21,7 +21,6 @@ Link: https://arxiv.org/pdf/2007.03316.pdf
 
 """
 
-
 class GNN(torch.nn.Module):
 	def __init__(self, in_channels, hidden_channels, out_channels,
 				 normalize=False, lin=True):
@@ -148,7 +147,7 @@ if torch.cuda.is_available():
 if args.dataset == 'politifact':
 	max_nodes = 500
 else:
-	max_nodes = 200 
+	max_nodes = 200
 
 
 dataset = FNNDataset(root='data', feature=args.feature, empty=False, name=args.dataset,

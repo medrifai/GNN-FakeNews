@@ -88,9 +88,8 @@ def main():
     device = torch.device(args.device)
     
     # Load dataset
-    dataset = FNNDataset(root='data/', 
+    dataset = FNNDataset(root='data/',
                         feature=args.feature,
-                        empty=False,
                         name=args.dataset,
                         transform=None)
 
@@ -129,14 +128,14 @@ def main():
         'BiGCN': {
             'model': BiGCNModel(args.num_features, args.nhid, args.num_classes),
             'epochs': 45,
-            'lr': 0.01,
+            'lr': 0.005,
             'weight_decay': 0.001
         },
         'GCNFN': {
             'model': GCNFNModel(args.num_features, args.nhid, args.num_classes),
             'epochs': 60,
             'lr': 0.001,
-            'weight_decay': 0.01 
+            'weight_decay': 0.01
         }
     }
     

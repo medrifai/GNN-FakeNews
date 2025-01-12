@@ -77,7 +77,7 @@ class ModelTrainer:
         avg_loss = total_loss / len(loader)
         
         return avg_loss, acc, auc, f1_macro, precision, recall
-        
+
     def save_metrics(self, filename):
         """Save training metrics to a file"""
         metrics = {
